@@ -1,0 +1,13 @@
+<view class="filter-panel">
+  <scroll-view class="filter-scroll" scroll-x enable-flex>
+    <view 
+      class="filter-item {{isSelected(item) ? 'active' : ''}}"
+      wx:for="{{options}}"
+      wx:key="id"
+      bindtap="handleSelect"
+      data-item="{{item}}"
+    >
+      {{item.name}}
+    </view>
+  </scroll-view>
+</view> 

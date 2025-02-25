@@ -1,0 +1,56 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "dianlianghongtu_jishe",
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "libVersion": "3.7.8",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/comment/comment",
+          "pathName": "pages/comment/comment",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/homes/homes",
+          "pathName": "pages/homes/homes",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/locations/locations",
+          "pathName": "pages/locations/locations",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/take-photo/take-photo",
+          "pathName": "pages/take-photo/take-photo",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/track-recommend/track-recommend",
+          "pathName": "pages/track-recommend/track-recommend",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

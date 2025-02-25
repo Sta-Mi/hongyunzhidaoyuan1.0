@@ -1,0 +1,10 @@
+<view class="photo-container">  
+  <image src="https://rmrbcmsonline.peopleapp.com/upload/image/202109/202109260540193492.jpg" mode="aspectFill" class="background-image"></image>  
+  <view class="header">  
+    <text class="title">拍照打卡</text>  
+  </view>  
+  <button bindtap="takePhoto" class="photo-button">🎥 拍照</button>  
+  <image wx:if="{{imageSrc}}" src="{{imageSrc}}" mode="widthFix" class="photo" />  
+  <button wx:if="{{imageSrc}}" bindtap="uploadPhoto" class="upload-button">上传</button>  
+  <button wx:if="{{imageSrc}}" bindtap="clearPhoto" class="clear-button">清除照片</button>  
+</view>

@@ -1,0 +1,43 @@
+<!--pages/story1/story1.wxml-->
+
+<view class="story-container">
+<navigator url="/pages/locations/locations" class="button top-left">返回</navigator>
+  <image class="background" src="/pages/assets/6.jpg" mode="aspectFill"></image>
+  <view class="header">
+    <text class="title">二七烈士纪念碑</text>
+  </view>
+  <view class="story-item">
+    <view class="story-content">
+      <view class="paragraph">           地点：</view>
+        <view class="paragraph">               汉口江岸区解放大道 2185 号 </view>
+      <view class="paragraph">            故事： </view>
+      <view class="paragraph">                            1923 年 2 月，京汉铁路</view>
+        <view class="paragraph">                     工人在中国共产党领导下，为</view>
+          <view class="paragraph">                     争取成立总工会的自由和工人</view>
+            <view class="paragraph">                     阶级的政治权利，举行了震惊</view>
+              <view class="paragraph">                     中外的京汉铁路大罢工。罢工</view>
+                <view class="paragraph">                     遭到帝国主义和封建军阀的残</view>
+                  <view class="paragraph">                     酷镇压，江岸分工会委员长林</view>
+                    <view class="paragraph">                     祥谦、湖北全省工团联合会法</view>
+                      <view class="paragraph">                      律顾问施洋等 52 位同志壮烈</view>
+                        <view class="paragraph">                     牺牲。二七烈士纪念碑就是为</view>
+                          <view class="paragraph">                       了纪念这些英勇牺牲的烈士</view>
+                    <view class="paragraph">                        而建。 </view>
+                     <view class="paragraph">                              这次罢工充分显示了中</view>
+                         <view class="paragraph">                        国工人阶级的力量和革命精</view>
+                        <view class="paragraph">                        神，扩大了中国共产党在全</view>
+                                  <view class="paragraph">                        国人民中的影响，在中国工</view>
+                            <view class="paragraph">                        人运动史上写下了光辉的一</view>
+                              <view class="paragraph">                         页，也为后来的革命斗争</view>
+                    <view class="paragraph">                              积累了宝贵经验和精神</view>
+                                  <view class="paragraph">                                    财富。  </view>
+    </view>
+</view>
+</view>
+<navigator url="/pages/story3/story3" class="button bottom-right">下一个</navigator>
+
+
+
+
+
+

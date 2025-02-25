@@ -1,0 +1,6 @@
+<view class="result-container">  
+  <image src="{{imageSrc}}" mode="widthFix" class="result-photo" />  
+  <text class="timestamp">{{timestamp}}</text>  
+  <button bindtap="clearPhoto" class="clear-button">清除照片</button>  
+  <button bindtap="goBack" class="back-button">返回</button>  
+</view>

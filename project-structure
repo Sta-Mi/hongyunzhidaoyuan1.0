@@ -1,0 +1,10 @@
+miniprogram/
+├── pages/
+│   ├── index/                 # 首页
+│   ├── search/               # 搜索页面
+│   ├── scenic-detail/        # 景区详情页
+│   └── filter/               # 筛选页面
+├── components/               # 可复用组件
+│   ├── filter-panel/         # 筛选面板组件
+│   └── scenic-card/          # 景区卡片组件
+└── utils/                    # 工具函数 

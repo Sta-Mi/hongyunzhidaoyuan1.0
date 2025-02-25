@@ -1,0 +1,24 @@
+
+  <image class="background" src="/pages/assets/2.jpg" mode="aspectFill"></image>
+  <view class="comment-container">
+  <block wx:for="{{comments}}" wx:key="index">
+    <view class="comment-item">
+      <image class="avatar" src="{{item.avatarPath}}" mode="aspectFill"></image>
+      <text>{{item.nickname}}</text>
+      <text>({{item.currentTime}})
+      </text>
+      <view class="comment">    {{item.comment}}</view> 
+      <image wx:if="{{item.imagePath}}" src="{{item.imagePath}}" mode="aspectFill" style="width: 100px; height: 100px; margin-top: 10px;"></image>
+      <view class="scenery">📍 {{item.scenery}}</view>
+     <button class="delete-btn" bindtap="showDeleteOptions" data-index="{{index}}">                                ...</button>
+      <view wx:if="{{showDelete && deleteIndex === index}}" class="delete-options">
+        <button class="deleteComment" bindtap="deleteComment" data-index="{{index}}">删除</button>
+        <button class="addComment" bindtap="addComment" data-index="{{index}}">评论</button>
+      </view>
+    </view>
+  </block>
+
+</view>
+<navigator url="/pages/homes/homes" class="unique-button bottom-right">添加评论</navigator>
+
+

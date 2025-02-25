@@ -1,0 +1,49 @@
+<!--pages/story1/story1.wxml-->
+<view class="story-container">
+  <navigator url="/pages/locations/locations" class="button top-left">返回</navigator>
+  <image class="background" src="/pages/assets/11.jpg" mode="aspectFill"></image>
+  <view class="header">
+    <text class="title"> 八一起义总指挥部旧址</text>
+  </view>
+  <view class="story-item">
+    <view class="story-content">
+      <view class="paragraph">                                  地点：</view>
+        <view class="paragraph">                                      南昌市中山路 380 号 </view>
+      <view class="paragraph">                                  故事： </view>
+      <view class="paragraph">                                        1927 年，蒋介石、汪精
+                                              卫相继背叛革命，大肆屠杀
+                                              共产党人和革命群众。7月中
+                                              旬，中共中央政治局临时常
+                                              务委员会决定在南昌举行武
+                                              装起义，江西大旅社因地理
+                                              位置利于隐蔽军事行动，被
+                                              起义部队包租下来作为总指
+                                              挥部。7月27日，周恩来、
+                                              李立三、恽代英、彭湃在旅
+                                              社喜庆礼堂成立了以周恩来
+                                              为书记的中共前敌委员会。
+                                                   然而，起义前夕，张
+                                              国焘赶赴南昌，传达共产国
+                                              际和中共中央的指示，主张
+                                              得到张发奎同意后再起义，
+                                              周恩来等前委成员坚决反对，
+                                              经过两天一夜的激烈争论，
+                                              前委决定起义不能拖延，定
+                                              于8月1日凌晨4点举行。
+                                                   最终，起义军两万余人
+                                              在周恩来、贺龙、叶挺、朱
+                                              德、刘伯承的率领下，激战 
+                                              4 个多小时，取得了起义胜
+                                              利，揭开了中国共产党独立
+                                              领导武装斗争和创建人民军
+                                              队的序幕。</view>
+    </view>
+    </view>
+
+</view><navigator url="/pages/南昌/story2-2/story2-2" class="button bottom-right">下一个</navigator>
+
+
+
+
+
+

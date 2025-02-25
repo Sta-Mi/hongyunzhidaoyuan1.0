@@ -1,0 +1,76 @@
+.photo-container {  
+  position: relative; /* 使子元素绝对定位相对这个容器 */  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: center;  
+  height: 100vh;  
+  background-color: rgba(255, 255, 255, 0.8); /* 白色半透明背景 */  
+  font-family: Arial, sans-serif;  
+}  
+
+.background-image {  
+  position: absolute; /* 绝对定位 */  
+  top: 0;  
+  left: 0;  
+  width: 100%; /* 100% 的宽度 */  
+  height: 100%; /* 100% 的高度 */  
+  z-index: 1; /* 设置 z-index，使其位于最底层 */  
+}  
+
+.header {  
+  background-color: rgba(244, 67, 54, 0.8); /* 红色头部，带透明效果 */  
+  width: 100%;  
+  padding: 20px 0; /* 上下间距 */  
+  text-align: center;  
+  z-index: 2; /* 使其位于背景图片之上 */  
+}  
+
+.title {  
+  color: white;  
+  font-size: 24px;  
+  font-weight: bold;  
+  z-index: 2; /* 使其位于背景图片之上 */  
+}  
+
+/* 其它按钮和图片的样式保持不变 */  
+.photo-button {  
+  margin: 40px 0; /* 增加上下间隔 */  
+  padding: 10px 20px;  
+  font-size: 18px;  
+  color: white;  
+  background-color: #f44336; /* 红色按钮 */  
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer;  
+  z-index: 2; /* 使其位于背景图片之上 */  
+}  
+
+.upload-button, .clear-button {  
+  margin-top: 20px;  
+  padding: 10px 20px;  
+  font-size: 18px;  
+  color: white;  
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer;  
+  z-index: 2; /* 使其位于背景图片之上 */  
+}  
+
+/* 绿色上传按钮 */  
+.upload-button {  
+  background-color: #4caf50;  
+}  
+
+/* 红色清除按钮 */  
+.clear-button {  
+  background-color: #f44336;  
+}  
+
+.photo {  
+  margin-top: 20px;  
+  max-width: 90%;  
+  border: 5px solid #f44336; /* 红色边框 */  
+  border-radius: 10px;  
+  z-index: 2; /* 使其位于背景图片之上 */  
+}

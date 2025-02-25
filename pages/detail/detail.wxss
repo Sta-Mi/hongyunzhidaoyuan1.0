@@ -1,0 +1,102 @@
+.container {
+  padding: 20rpx;
+  background-color: rgb(175,175,154);
+}
+
+.detail-box {
+  background-color: rgb(243, 228, 228);
+  padding: 30rpx;
+  border-radius: 20rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.city {
+  font-size: 32rpx;
+  color: #666;
+}
+
+.cover-view {
+  background-color: rgba(221, 203, 203, 0.8);
+  padding: 40rpx;
+  border-radius: 29rpx;
+  margin-bottom: 10rpx;
+}
+
+.detail-container {  
+  padding: 40rpx;  
+}  
+
+.map {  
+  width: 100%; /* 地图宽度 */  
+  height: 400rpx; /* 地图高度 */  
+  border-radius: 10rpx; /* 圆角 */  
+  border: 4px solid #007aff; /* 添加边框 */  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */  
+  margin-bottom: 20rpx; /* 下方间距 */  
+}
+
+.attraction-list {  
+  font-size: 30rpx; /* 修改列表字体大小 */  
+  color: #333; /* 修改字体颜色 */  
+  padding: 10rpx; /* 增加内边距 */  
+  background-color: rgba(255, 255, 255, 0.9); /* 可选：设置背景色 */  
+  border-radius: 10rpx; /* 可选：设置圆角 */  
+  margin-bottom: 15rpx; /* 下边距 */  
+}  
+
+.attraction-item {
+  margin-bottom: 10rpx;
+  padding: 15rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+
+.attraction-name {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.attraction-image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 8rpx;
+}
+
+.attraction-title {  
+  font-size: 30rpx; /* 修改字体大小 */  
+  font-weight: bold; /* 加粗字体 */  
+  color: #333; /* 字体颜色 */  
+  margin: 10rpx 0; /* 上下边距，可以自由调整 */  
+  text-align: left; /* 文本对齐方式 */  
+}
+
+.current-attraction {
+  margin: 20rpx 0;
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 8rpx;
+  overflow: hidden; /* 防止图片溢出容器 */
+}
+
+.current-image {
+  width: 100%;
+  /* 移除固定高度，让图片按原始比例显示 */
+  /* height: 400rpx; */
+  border-radius: 8rpx;
+  display: block; /* 消除图片底部可能的空隙 */
+}
+
+.no-attractions {
+  text-align: center;
+  padding: 30rpx;
+  color: #666;
+  font-size: 28rpx;
+  background: #fff;
+  border-radius: 8rpx;
+}
+  

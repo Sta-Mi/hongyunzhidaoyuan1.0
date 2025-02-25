@@ -1,0 +1,50 @@
+<!--pages/story1/story1.wxml-->
+
+<view class="container">
+<navigator url="/pages/locations/locations" class="button top-left">返回</navigator>
+  <image class="background" src="/pages/assets/10.jpg" mode="aspectFill"></image>
+  <view class="header">
+    <text class="title">    辛亥革命纪念馆</text>
+  </view>
+  <view class="story-item">
+    <view class="story-content">
+    <view class="paragraph">        1    </view>
+      <view class="paragraph">                                      地点：</view>
+        <view class="paragraph">                                          武昌区武珞路 1 号 </view>
+      <view class="paragraph">                                      故事： </view>
+      <view class="paragraph">                                            19 世纪末 20 世纪初，
+                                                 中国内忧外患，民族危机深重。
+                                                 以孙中山为首的革命党人积极
+                                                 传播民主革命思想，力求推翻
+                                                 腐朽的清王朝。武汉的文学社
+                                                 和共进会两大革命组织，在新
+                                                 军和会党中发展力量，并于
+                                                 1911年9月联合，谋划起义。
+                                                    1911年10月9日，革命党
+                                                 人在汉口俄租界制造炸弹时不
+                                                 慎爆炸，起义计划泄露，湖广
+                                                 总督瑞澂大肆搜捕革命党人。
+                                                    10 月10 日晚，新军工
+                                                 程第八营的革命党人熊秉坤
+                                                 率先打响起义第一枪，他们
+                                                 迅速占领楚望台军械库。其
+                                                 他各营革命党人纷纷响应，
+                                                 经过一夜激战，于 11 日清
+                                                 晨占领武昌城。
+                                                    武昌起义军政府旧址红
+                                                 楼成为起义军的指挥中心。
+                                                 革命党人在此成立湖北军
+                                                 政府，推举黎元洪为都督，
+                                                 发布文告宣布废除清朝帝制，
+                                                 建立中华民国,中国两千多年
+                                                 的封建帝制结束。</view>
+    </view>
+</view>
+</view>
+
+
+
+
+
+
+

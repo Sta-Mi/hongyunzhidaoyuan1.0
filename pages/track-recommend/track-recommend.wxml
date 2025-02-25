@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="box" wx:for="{{locations}}" bindtap="goToDetail" data-location="{{item}}">
+    {{item.name}}
+  </view>
+</view>

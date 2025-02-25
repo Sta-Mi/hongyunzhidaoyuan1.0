@@ -1,0 +1,47 @@
+<!--pages/story1/story1.wxml-->
+<view class="story-container">
+  <navigator url="/pages/locations/locations" class="button top-left">返回</navigator>
+  <image class="background" src="/pages/assets/14.jpg" mode="aspectFill"></image>
+  <view class="header">
+    <text class="title">南平镇南平文庙</text>
+  </view>
+  <view class="story-item">
+    <view class="story-content">
+      <view class="paragraph">                                  “红四、六军会师场地”</view>
+      <view class="paragraph">                                       
+                                                    1930年7月4日，中
+                                                  国工农红军第四军、
+                                                  第六军根据中央的指
+                                                  示，在公安南平会师。
+                                                  两军前委在文庙大成
+                                                  殿内召开联席会议，
+                                                  合编成立红二军团，
+                                                  贺龙任总指挥，周逸
+                                                  群任政治委员，并在
+                                                  文庙空侧地召开群众
+                                                  大会，贺龙总指挥在
+                                                  会议上讲话。
+
+
+                                                      红四、六军在南
+                                                  平镇会师并成立红二
+                                                  军团，壮大了红军的
+                                                  力量，为湘鄂西革命
+                                                  根据地的建设和发展
+                                                  提供了坚强的军事保
+                                                  障，成为中国革命进
+                                                  程中的一个重要里程
+                                                  碑，南平文庙也因此
+                                                  成为红二军团的诞生
+                                                  地。
+     </view>
+    </view>
+    </view>
+
+</view>
+
+
+
+
+
+

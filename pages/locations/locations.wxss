@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  height: 100vh;
+  background-color: #860505;
+  
+}
+
+.white-block {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 88%;
+  margin: auto;
+  height: 93vh; /* 调整白色方块高度，使其比屏幕稍短 */
+  background-color: rgba(250, 243, 243, 0.918);
+}
+
+.location-item {
+  text-align: center;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  background-color:  #c0a14a;
+  padding: 9px;
+  border-radius: 5px;
+  width: 95%; /* 进一步调整黄色方块宽度，使其横向长度接近白色方块 */
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color:#af1717;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+text {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 15px;
+}

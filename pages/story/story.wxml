@@ -1,0 +1,5 @@
+<view class="story-container">
+  <image class="background" src="/pages/assets/2.jpg" mode="aspectFill"></image>
+  <text class="title">荆楚红色故事库</text>
+  <navigator url="/pages/locations/locations" class="button">点击进入</navigator>
+</view>

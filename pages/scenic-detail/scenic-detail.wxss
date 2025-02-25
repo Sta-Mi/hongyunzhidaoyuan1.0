@@ -1,0 +1,306 @@
+.container {
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+.scenic-image {
+  width: 100%;
+  height: 450rpx;
+  object-fit: cover;
+}
+
+.info-section {
+  padding: 30rpx;
+  background: #fff;
+}
+
+.scenic-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.tags {
+  display: flex;
+  gap: 12rpx;
+}
+
+.tag {
+  font-size: 24rpx;
+  color: #07c160;
+  background: rgba(7, 193, 96, 0.1);
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+}
+
+.tabs {
+  display: flex;
+  background: #fff;
+  padding: 0 30rpx;
+  margin-top: 20rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.tab {
+  position: relative;
+  padding: 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.tab.active {
+  color: #07c160;
+  font-weight: bold;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 30rpx;
+  right: 30rpx;
+  height: 4rpx;
+  background: #07c160;
+  border-radius: 2rpx;
+}
+
+.content-section {
+  background: #fff;
+  padding: 30rpx;
+  min-height: 400rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.description {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.guide-item {
+  margin-bottom: 30rpx;
+}
+
+.item-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.item-content {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+}
+
+.facilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.facility {
+  font-size: 24rpx;
+  color: #666;
+  background: #f5f5f5;
+  padding: 8rpx 20rpx;
+  border-radius: 20rpx;
+} 
+
+.track-container{
+  padding: 20rpx;
+  background-color: rgb(175,175,154);
+}
+.detail-box {
+  background-color: rgb(243, 228, 228);
+  padding: 30rpx;
+  border-radius: 20rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.city {
+  font-size: 32rpx;
+  color: #666;
+}
+
+.cover-view {
+  background-color: rgba(221, 203, 203, 0.8);
+  padding: 40rpx;
+  border-radius: 29rpx;
+  margin-bottom: 10rpx;
+}
+
+.detail-container {  
+  padding: 40rpx;  
+}  
+
+.map {  
+  width: 100%; /* 地图宽度 */  
+  height: 400rpx; /* 地图高度 */  
+  border-radius: 10rpx; /* 圆角 */  
+  border: 4px solid #007aff; /* 添加边框 */  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */  
+  margin-bottom: 20rpx; /* 下方间距 */  
+}
+
+.attraction-list {  
+  font-size: 30rpx; /* 修改列表字体大小 */  
+  color: #333; /* 修改字体颜色 */  
+  padding: 10rpx; /* 增加内边距 */  
+  background-color: rgba(255, 255, 255, 0.9); /* 可选：设置背景色 */  
+  border-radius: 10rpx; /* 可选：设置圆角 */  
+  margin-bottom: 15rpx; /* 下边距 */  
+}  
+
+.attraction-item {
+  margin-bottom: 10rpx;
+  padding: 15rpx;
+  background: #f3f3f3;
+  border-radius: 8rpx;
+}
+
+.attraction-name {
+  font-size: 28rpx;
+  color: #333;
+}
+
+/*tab4-评论*/
+.comment-container {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.comment-input-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 8rpx;
+  padding: 16rpx;
+  margin-right: 20rpx;
+}
+.comment-icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+}
+.comment-input {
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.comment-btn {
+  font-size: 28rpx;
+  color: #07c160;
+}
+
+/*评论列表*/
+.post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nickname-class{
+  color: #333;
+  flex: 1;
+}
+.nickname-font {
+  font-size: 14px;
+}
+
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.like-icon {
+  width: 32px;
+  height: 20px;
+  margin-right: 4px;
+  color: #999;
+  font-size: 12px;
+}
+.comment-info{
+  padding-left: 45px;
+}
+.comment-class{
+  color:black;
+}
+.comment-font{
+  font-size: 16px;
+}
+.post-image {
+  margin: 10px 0;
+}
+
+.main-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: flex-start;
+  color: #999;
+  font-size: 12px;
+}
+
+.time, .location, .reply {
+  margin-right: 10px;
+}
+
+/*蒙层*/
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);  /* 半透明黑色背景 */
+  z-index: 1;  /* 确保蒙层位于最上层 */
+}
+
+/*children模块*/
+.children-img{
+  width: 32px;
+  height: 32px;
+}
+.children-nickname-font{
+  font-size: 12px;
+}
+.children-comment-font{
+  font-size: 14px;
+}

@@ -1,0 +1,17 @@
+.container {
+  padding: 20rpx;
+  background-color:rgb(175,175,154);
+}  
+
+
+.box {
+  margin-bottom: 40rpx;
+  padding: 30rpx;
+  background-color: rgb(243, 228, 228);
+  text-align:center ;
+  font-size: 35rpx;
+  font-weight:800;
+  color: rgb(12, 7, 7);
+  border-radius: 80px;  
+  margin-bottom: 25px;  
+}

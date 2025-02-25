@@ -1,0 +1,30 @@
+<view class="container">
+  <!-- 筛选选项 -->
+  <scroll-view class="filter-scroll" scroll-x enable-flex>
+    <view 
+      class="filter-item {{isSelected(item) ? 'active' : ''}}"
+      wx:for="{{filterOptions[currentType]}}"
+      wx:key="id"
+      bindtap="handleSelect"
+      data-item="{{item}}"
+    >
+      {{item.name}}
+    </view>
+  </scroll-view>
+
+  <!-- 筛选结果列表 -->
+  <view class="scenic-list">
+    <scenic-card 
+      wx:for="{{scenicList}}" 
+      wx:key="id" 
+      scenic="{{item}}"
+      bindtap="goToScenicDetail"
+      data-id="{{item.id}}"
+    />
+  </view>
+
+  <!-- 无结果提示 -->
+  <view class="empty-tip" wx:if="{{selectedItems.length > 0 && scenicList.length === 0}}">
+    暂无符合条件的景点
+  </view>
+</view> 

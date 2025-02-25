@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/filter/filter",
+    "pages/scenic-detail/scenic-detail",
+    "pages/feedback/feedback",
+    "pages/take-photo/take-photo",
+    "pages/result-photo/result-photo",
+    "pages/my/my",
+    "pages/locations/locations",
+    "pages/story/story",
+    "pages/story1/story1",
+    "pages/story2/story2",
+    "pages/story3/story3",
+    "pages/南昌/story1/story1",
+    "pages/南昌/story2-1/story2-1",
+    "pages/南昌/story2-2/story2-2",
+    "pages/荆州/story3-1/story3-1",
+    "pages/荆州/story3-2/story3-2",
+    "pages/comment/comment",
+    "pages/homes/homes"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "旅游资源检索",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "usingComponents": {
+    "filter-panel": "/components/filter-panel/filter-panel",
+    "scenic-card": "/components/scenic-card/scenic-card"
+  }
+}

@@ -1,0 +1,196 @@
+<view class="container">
+  <!-- 加载状态 -->
+  <view class="loading" wx:if="{{loading}}">加载中...</view>
+
+  <block wx:elif="{{scenicDetail}}">
+    <!-- 景区图片 -->
+    <image class="scenic-image" src="{{scenicDetail.imageUrl}}" mode="aspectFill"/>
+    
+    <!-- 基本信息 -->
+    <view class="info-section">
+      <view class="scenic-title">{{scenicDetail.name}}</view>
+      <view class="tags">
+        <text class="tag">{{scenicDetail.period}}</text>
+        <text class="tag">{{scenicDetail.type}}</text>
+        <text class="tag">{{scenicDetail.region}}</text>
+      </view>
+    </view>
+
+    <!-- 选项卡 -->
+    <view class="tabs">
+      <view 
+        class="tab {{currentTab === 'intro' ? 'active' : ''}}" 
+        bindtap="switchTab" 
+        data-tab="intro"
+      >景区介绍</view>
+      <view 
+        class="tab {{currentTab === 'guide' ? 'active' : ''}}" 
+        bindtap="switchTab" 
+        data-tab="guide"
+      >参观指南</view>
+      <view 
+        class="tab {{currentTab === 'track' ? 'active' : ''}}" 
+        bindtap="switchTab" 
+        data-tab="track"
+      >路径推荐</view>
+      <view 
+        class="tab {{currentTab === 'comment' ? 'active' : ''}}" 
+        bindtap="switchTab" 
+        data-tab="comment"
+      >其他评论</view>
+    </view>
+
+    <!-- 内容区域 -->
+    <view class="content-section">
+      <!-- tab1景区介绍 -->
+      <view class="tab-content" hidden="{{currentTab !== 'intro'}}">
+        <view class="section-title">详细介绍</view>
+        <text class="description">{{scenicDetail.fullDescription}}</text>
+      </view>
+
+      <!-- tab2参观指南 -->
+      <view class="tab-content" hidden="{{currentTab !== 'guide'}}">
+        <view class="guide-item">
+          <view class="item-title">开放时间</view>
+          <view class="item-content">{{scenicDetail.openTime}}</view>
+        </view>
+        <view class="guide-item">
+          <view class="item-title">门票信息</view>
+          <view class="item-content">{{scenicDetail.ticket}}</view>
+        </view>
+        <view class="guide-item">
+          <view class="item-title">地址</view>
+          <view class="item-content">{{scenicDetail.address}}</view>
+        </view>
+        <view class="guide-item">
+          <view class="item-title">交通指引</view>
+          <view class="item-content">{{scenicDetail.traffic}}</view>
+        </view>
+        <view class="guide-item">
+          <view class="item-title">设施服务</view>
+          <view class="facilities">
+            <text class="facility" wx:for="{{scenicDetail.facilities}}" wx:key="*this">{{item}}</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- tab3路径推荐 -->
+      <view class="tab-content" hidden="{{currentTab !== 'track'}}">
+          <navigation-bar title="{{scenicDetail.name}}" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+          <view class="detail-container">
+            <map class="map"
+              latitude="{{latitude}}"
+              longitude="{{longitude}}"
+              markers="{{markers}}"
+              show-location
+              scale="12">
+            </map>
+
+            <!-- 当前景点图片 -->
+            <view class="current-attraction" wx:if="{{currentAttraction}}">
+              <image 
+                class="current-image" 
+                src="{{currentAttraction.imageUrl}}" 
+                mode="widthFix"
+                binderror="imageError">
+              </image>
+            </view>
+
+            <!-- 其他景点列表 -->
+            <view class="attraction-list">
+              <view class="attraction-title">该城市的其他景点：</view>
+              <block wx:if="{{attractions.length > 0}}">
+                <view wx:for="{{attractions}}" wx:key="name" class="attraction-item">
+                  <view class="attraction-name">{{item.name}}</view>
+                </view>
+              </block>
+              <block wx:else>
+                <view class="no-attractions">此地区暂未开放其他景点</view>
+              </block>
+            </view>
+          </view>
+      </view>
+      
+      <!-- tab4评论 -->
+      <view class="tab-content" hidden="{{currentTab !== 'comment'}}">
+        <view class="mask" style="display: {{maskDisplay}}" bindtap="hideMask"></view>
+        <view class="comment-container">
+          <view class="comment-input-wrap">
+            <input 
+              class="comment-input" 
+              placeholder="有话要说，快来评论" 
+              value="{{comment}}"
+              bindinput="inputComment"
+            />
+            <image src="{{imagePath==='' ? commentImage:imagePath}}" mode="aspectFill" style="width: 32px; height: 32px; margin-right: 16px;" class="comment-icon" bindtap="chooseImage"></image>
+          </view>
+          <button url="/pages/homes/homes" class="comment-btn" bindtap="addComment">发表</button>
+        </view>
+        <!--评论列表-->
+        <block wx:for="{{commentTotalData}}" wx:key="index">
+          <view class="post">
+            <view class="post-header">
+              <image class="avatar" src="{{item.avatarPath}}"></image>
+              <text class="nickname-class nickname-font">{{item.nickname}}</text>
+              <view class="like">
+                <text style="display: {{loginUserNickName===item.nickname ||loginUserRole==='admin'  ?'block':'none'}};" class="like-icon" bindtap="deleteComment" data-path="{{index}}">删除</text>
+              </view>
+            </view>
+            <view class="comment-info">
+              <text class="comment-class comment-font">{{item.comment}}</text>
+              <view style="display:{{item.imagePath === '' ? 'none' : 'block'}}"  class="post-image">
+                <image class="main-image" src="{{item.imagePath}}"></image>
+              </view>
+              <view class="post-footer">
+                <text class="time">{{item.currentTime}}</text>
+                <text class="reply" data-path="{{index}}" bindtap="replayComment">回复</text>
+              </view>
+            </view>
+            <!--递归子评论-->
+            <template is="commentTemplate" data="{{item: item, path: index}}"></template>
+          </view><!--评论列表-->
+        </block>
+        
+        <!--定义评论模板-->
+        <template name="commentTemplate">
+          <block wx:for="{{item.children}}" wx:key="index">
+            <view class="post children"style="margin-left: 10px;">
+              <view class="post-header">
+                <image class="avatar children-img" src="{{item.avatarPath}}"></image>
+                <text class="nickname-class children-nickname-font">{{item.nickname}}</text>
+                <view class="like">
+                  <text 
+                    style="display: {{loginUserNickName===item.nickname ||loginUserRole==='admin'  ?'none':'block'}};" 
+                    class="like-icon" 
+                    bindtap="deleteComment" 
+                    data-path="{{path}}-{{index}}">删除</text>
+                </view>
+              </view><!--header-->
+              <view class="comment-info">
+                <text class="comment-class children-comment-font">{{item.comment}}</text>
+                <view style="display:{{item.imagePath === '' ? 'none' : 'block'}}" class="post-image">
+                  <image class="main-image" src="{{item.imagePath}}"></image>
+                </view>
+                <view class="post-footer">
+                  <text class="time">{{item.currentTime}}</text>
+                  <text 
+                    class="reply" 
+                    data-path="{{path}}-{{index}}"
+                    bindtap="replayComment">回复</text>
+                </view>
+              </view><!--footer-->
+              <!--递归调用自身-->
+              <template is="commentTemplate" data="{{item: item}}"></template>
+            </view>
+          </block>
+        </template>
+
+      </view><!--tab4-->
+    </view>
+  </block>
+
+  <!-- 错误提示 -->
+  <view class="error" wx:else>
+    <text>景点信息加载失败</text>
+  </view>
+</view> 

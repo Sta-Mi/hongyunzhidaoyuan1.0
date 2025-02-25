@@ -1,0 +1,12 @@
+<view class="scenic-card" bindtap="onTap">
+  <image class="scenic-image" src="{{scenic.imageUrl}}" mode="aspectFill"/>
+  <view class="scenic-info">
+    <text class="scenic-name">{{scenic.name}}</text>
+    <text class="scenic-desc">{{scenic.description}}</text>
+    <view class="scenic-tags">
+      <text wx:if="{{scenic.period}}" class="tag">{{scenic.period}}</text>
+      <text wx:if="{{scenic.type}}" class="tag">{{scenic.type}}</text>
+      <text wx:if="{{scenic.region}}" class="tag">{{scenic.region}}</text>
+    </view>
+  </view>
+</view> 

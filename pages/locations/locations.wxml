@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="white-block">
+    <text class="title">探径寻踪</text>
+    <block wx:for="{{locations}}" wx:key="id" wx:if="{{item.id === 1}}">
+      <view class="location-item">
+        <text bindtap="navigateToStory1">{{item.name}} - {{item.storyName}}</text>
+      </view>
+    </block>
+    <block wx:for="{{locations}}" wx:key="id" wx:if="{{item.id === 2}}">
+      <view class="location-item">
+        <text bindtap="navigateToStory2">{{item.name}} - {{item.storyName}}</text>
+      </view>
+    </block>
+    <block wx:for="{{locations}}" wx:key="id" wx:if="{{item.id === 3}}">
+      <view class="location-item">
+        <text bindtap="navigateToStory3">{{item.name}} - {{item.storyName}}</text>
+      </view>
+    </block>
+  </view>
+</view>

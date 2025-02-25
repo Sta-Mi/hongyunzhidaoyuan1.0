@@ -1,0 +1,41 @@
+<view class="container">
+  <navigation-bar title="{{name}}" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+  
+  <view class="detail-box">
+    <view class="title">{{name}}</view>
+    <view class="city">城市：{{city}}</view>
+  </view>
+
+  <view class="detail-container">
+    <map class="map"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      show-location
+      scale="12">
+    </map>
+
+    <!-- 当前景点图片 -->
+    <view class="current-attraction" wx:if="{{currentAttraction}}">
+      <image 
+        class="current-image" 
+        src="{{currentAttraction.imageUrl}}" 
+        mode="widthFix"
+        binderror="imageError">
+      </image>
+    </view>
+
+    <!-- 其他景点列表 -->
+    <view class="attraction-list">
+      <view class="attraction-title">该城市的其他景点：</view>
+      <block wx:if="{{attractions.length > 0}}">
+        <view wx:for="{{attractions}}" wx:key="name" class="attraction-item">
+          <view class="attraction-name">{{item.name}}</view>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="no-attractions">此地区暂未开放其他景点</view>
+      </block>
+    </view>
+  </view>
+</view>

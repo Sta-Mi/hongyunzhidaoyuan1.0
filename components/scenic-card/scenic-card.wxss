@@ -1,0 +1,50 @@
+.scenic-card {
+  background: #fff;
+  border-radius: 12rpx;
+  overflow: hidden;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+
+.scenic-image {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 12rpx 12rpx 0 0;
+  object-fit: cover;
+}
+
+.scenic-info {
+  padding: 20rpx;
+  background: #fff;
+  border-radius: 0 0 12rpx 12rpx;
+}
+
+.scenic-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.scenic-desc {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 16rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.scenic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12rpx;
+}
+
+.tag {
+  font-size: 24rpx;
+  color: #07c160;
+  background: rgba(7, 193, 96, 0.1);
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+} 

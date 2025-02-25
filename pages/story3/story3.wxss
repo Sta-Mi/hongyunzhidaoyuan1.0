@@ -1,0 +1,72 @@
+/* pages/story1/story1.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: flex-start; /* 确保子元素从左侧开始排列 */
+}
+.background {
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.paragraph {
+  white-space: pre;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  text-indent: 8em;
+}
+
+.title {
+  color: #330404;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  left: 76px;
+}
+
+.story-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.story-title {
+  color: #0c0101;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  text-indent: 1em;
+}
+
+.story-content {
+  color: rgb(15, 1, 1);
+  font-size: 14px;
+  text-align: left;
+  text-indent: 3.5em;
+  line-height: 1.65;
+}
+.button {
+  background-color: white ;
+  color: black;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.top-left {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+
+
+
+

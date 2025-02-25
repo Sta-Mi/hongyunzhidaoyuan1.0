@@ -1,0 +1,32 @@
+<!--pages/story1/story1.wxml-->
+<view class="story-container">
+  <navigator url="/pages/locations/locations" class="button top-left">返回</navigator>
+  <image class="background" src="/pages/assets/13.jpg" mode="aspectFill"></image>
+  <view class="header">
+    <text class="title"> 弥陀寺秋收暴动</text>
+  </view>
+  <view class="story-item">
+    <view class="story-content">
+      <view class="paragraph">1927年9月，中共鄂西特委决定以公安县人民自卫
+    团为主力，发动公（安）江（陵）农民起义，攻打弥陀
+    寺。9 月 23 日清晨，在暴动指挥部率领下，各路起义
+    大军分左、中、右 3 路进攻弥陀寺，江陵西部数千农民
+    前来支援。反动保商团弃镇逃窜，农军顺利占领该镇，
+    没收了大地主、大奸商资财近 200 万元。
+        弥陀寺农民秋收暴动的胜利，大大鼓舞了鄂西地区广
+    大农民的革命斗志，有力地推动了鄂西秋收暴动斗争，
+    极大地震撼了荆江沿岸的国民党地方反动势力，还为湘
+    鄂西       红军的组建奠定了组织基础和干部基础，较早
+                                        地在报告里提出了绝
+                                              对服从党的指挥。
+     </view>
+    </view>
+    </view>
+
+</view><navigator url="/pages/荆州/story3-2/story3-2" class="button bottom-right">下一个</navigator>
+
+
+
+
+
+

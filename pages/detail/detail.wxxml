@@ -1,0 +1,7 @@
+longitude="{{longitude}}"
+markers="{{[{
+    latitude: latitude,
+    longitude: longitude,
+    name: name,
+    id: 1
+}]}}" 

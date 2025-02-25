@@ -1,0 +1,18 @@
+
+ 
+<view class="container">
+  <view class="header">
+    <image class="avatar" src="{{avatarPath}}" mode="aspectFill"></image>
+    <text>欢迎你，{{nickname}}!</text>
+  </view>
+  <textarea placeholder="请输入您的评论" bindinput="onCommentInput" value="{{comment}}"></textarea>
+  <picker mode="selector" range="{{array}}" bindchange="bindPickerChange">
+    <view class="picker">
+      景点▼{{index == null ? '' : array[index]}}
+    </view> <!--下拉框选择景点-->
+  </picker>
+  <view class="time"><text>{{currentTime}}</text></view> <!--当前时间-->
+  <button bindtap="chooseImage">选择图片</button>
+  <image wx:if="{{imagePath}}" src="{{imagePath}}" mode="aspectFill" style="width: 100px; height: 100px; margin-top: 20px;"></image>
+  <button bindtap="submitComment">提交</button>
+</view>

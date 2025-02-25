@@ -1,0 +1,32 @@
+<!--pages/story1/story1.wxml-->
+<view class="story-container">
+  <navigator url="/pages/locations/locations" class="button top-left">返回</navigator>
+  <image class="background" src="/pages/assets/12.jpg" mode="aspectFill"></image>
+  <view class="header">
+    <text class="title"> 牛行车站</text>
+  </view>
+  <view class="story-item">
+    <view class="story-content">
+      <view class="paragraph">位于南昌城北，是当年的水陆交通枢纽和南昌
+      城咽喉要道。1927 年，贺龙第二十军和叶挺十一
+      军一部分从九江出发，于 7 月 28 日到达牛行车
+      站。贺龙下车后在此部署一个团，任务是歼灭牛行
+      车站守军，封锁赣江水道。8 月 1 日凌晨南昌城
+      内起义枪响后，埋伏在此的起义官兵发起攻击，顺
+         利占据车站，警戒了牛行渡口及赣江上下游，为
+             南昌起义顺利举行提供了重要保障。  1930 
+                   年，毛泽东、朱德率领的红一军团攻
+                      击牛行车站，并在此举行了纪念南
+                                     昌起义三周年的 
+                                        “八一示威”。</view>
+    </view>
+    </view>
+  </view>
+
+
+
+
+
+
+
+

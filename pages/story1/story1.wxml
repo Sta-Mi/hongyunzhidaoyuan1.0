@@ -1,0 +1,40 @@
+<!--pages/story1/story1.wxml-->
+<view class="story-container">
+  <navigator url="/pages/locations/locations" class="button top-left">返回</navigator>
+  <image class="background" src="/pages/assets/4.jpg" mode="aspectFill"></image>
+  <view class="header">
+    <text class="title"> 黄鹤楼</text>
+  </view>
+  
+  <view class="story-item">
+    <view class="story-content">
+      <view class="paragraph">    </view>
+        <view class="paragraph">    黄鹤楼，坐落于武汉武昌蛇山之巅，承载着</view>
+        <view class="paragraph">千年传奇。</view>
+        <view class="paragraph">    相传三国时，仙人费祎驾鹤经此，遂有此楼。</view>
+          <view class="paragraph">这一传说，如梦幻之纱，为黄鹤楼蒙上</view>
+          <view class="paragraph">神秘色彩，使其仿若仙凡交汇之所。</view>
+        <view class="paragraph">    而唐代诗人崔颢的《黄鹤楼》，更是让黄鹤</view>
+          <view class="paragraph">         楼声名大噪。“昔人已乘黄鹤去，此地</view>
+            <view class="paragraph">           空余黄鹤楼。”</view>
+              <view class="paragraph">                          开篇两句,便将仙人乘鹤远去</view>
+                <view class="paragraph">                            的缥缈意境勾勒而出，引得</view>
+              <view class="paragraph">                            无数人神往。此诗一出，连</view>
+                <view class="paragraph">                            诗仙李白都为之折服，留下</view>
+                  <view class="paragraph">                               “眼前有景道不得，崔颢</view>
+                    <view class="paragraph">                                  题诗在上头”的佳话，</view>
+                      <view class="paragraph">                             足见其魅力。</view>
+        <view class="paragraph">                                历经岁月沧桑，黄鹤楼屡</view>
+          <view class="paragraph">                               建屡毁，却又屡毁屡建。如</view>
+            <view class="paragraph">                          今的它，飞檐翘角，雄伟壮观，</view>
+        <view class="paragraph">                                  它宛如一部活着的史书，</view>
+          <view class="paragraph">                                    将历史与传说娓娓道来，</view>
+            <view class="paragraph">                              让人流连忘返。</view>
+    </view>
+</view>
+</view><navigator url="/pages/story2/story2" class="button bottom-right">下一个</navigator>
+
+
+
+
+
